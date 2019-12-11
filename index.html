@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/control-style.css">
+  <link rel="stylesheet" href="styles/periscope-style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="controlContainer">
+      <div class="gameControl">
+        <div class="gameControl__level controls">
+          <div class="gameControl__levelLebel">Уровень:</div>
+          <span class="gameControl__levelText controls-text">0</span>
+        </div>
+        <div class="gameControl__button gameControl__gameButton controls">
+          <span class="gameControl__gameButtonText">ИГРА</span>
+        </div>
+      </div>
+  
+      <div class="gameInfo">
+        <div class="gameInfo__shipsSunk controls">
+          <div class="gameInfo__shipsSunkLebel">Потоплено:</div>
+          <span class="gameInfo__shipsSunkText controls-text">0</span>
+        </div>
+        <div class="gameInfo__torpedos controls">
+          <div class="gameInfo__torpedosLebel">Торпеды:</div>
+          <span class="gameInfo__torpedosText controls-text">0</span>
+        </div>
+        <div class="gameInfo__torpedos controls">
+          <div class="gameInfo__torpedosLebel">Мощность:</div>
+          <span class="gameInfo__capacityText controls-text">0</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="message"></div>
+ 
+  <div class="periscope">
+    <div class="landscape">
+      <div id="ships"></div>
+      <div class="torpedo-container">
+        <div class="torpedo"></div>
+      </div>
+    </div>
+
+    <img class="periscope-net" src="images/periscope-net.png" alt="">
+  </div>
+ 
+</div>
+
+  <script src="scripts/submarine.js"></script>
+  <script src="scripts/ships.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: lightsteelblue;
+}
+
+.container {
+  max-width: 800px;
+  min-width: 563px;
+  margin: 0 auto;
+  padding: 30px 10px 0;
+}
+
+.gameControl, .gameInfo {
+  width: 90px;  
+}
+
+.gameControl {
+  float: left;
+}
+
+.gameInfo {
+  float: right;
+}
+
+.controlContainer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.controls {
+  padding: 5px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: silver;
+  display: inline-block; 
+  text-align: center;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.controls-text {
+  font-size: 24px;
+}
+
+.gameControl__button {
+  cursor: pointer;   
+  padding: 5px 0 3px;
+  letter-spacing: 1.2px;
+}
+
+.gameControl__button:active {
+  transform: translate(1px, 2px);
+}
+
+.gameControl__level { 
+  margin-top: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: silver;
+}
+
+.message {
+  width: 450px;
+  height: 42px;
+  margin: 120px auto 0;
+  border: 2px solid black;
+  background-color: silver;
+  padding: 10px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
